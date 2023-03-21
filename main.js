@@ -55,30 +55,18 @@ function gotResult(error,results)
         prediction1=results[0].label;
         prediction2=results[1].label;
         speak();
-        if(results[0].label=="Happy")
+        if(results[0].label=="Amazing")
         {
-            document.getElementById("update_emoji").innerHTML="&#128522;";
+            document.getElementById("update_emoji").innerHTML="&#128076;";
         }
-        if(results[0].label=="Sad")
+        if(results[0].label=="Thumbs Up")
         {
-            document.getElementById("update_emoji").innerHTML="&#128532;";
+            document.getElementById("update_emoji").innerHTML="&#128077;";
         }
-        if(results[0].label=="Angry")
+        if(results[0].label=="Thumbs Down")
         {
-            document.getElementById("update_emoji").innerHTML="&#128548;";
+            document.getElementById("update_emoji").innerHTML="&#128078;";
         }
 
-        if(results[1].label=="Happy")
-        {
-            document.getElementById("update_emoji2").innerHTML="&#128522;";
-        }
-        if(results[1].label=="Sad")
-        {
-            document.getElementById("update_emoji2").innerHTML="&#128532;";
-        }
-        if(results[1].label=="Angry")
-        {
-            document.getElementById("update_emoji2").innerHTML="&#128548;";
-        }
     }
 }
