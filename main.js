@@ -68,5 +68,17 @@ function gotResult(error,results)
             document.getElementById("update_emoji").innerHTML="&#128078;";
         }
 
+        if(results[1].label=="Amazing")
+        {
+            document.getElementById("update_emoji2").innerHTML="&#128076;";
+        }
+        if(results[1].label=="Thumbs Up")
+        {
+            document.getElementById("update_emoji2").innerHTML="&#128077;";
+        }
+        if(results[1].label=="Thumbs Down")
+        {
+            document.getElementById("update_emoji2").innerHTML="&#128078;";
+        }
     }
 }
